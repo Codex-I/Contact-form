@@ -18,7 +18,7 @@
   <div class="card border-0 mx-auto">
     <div class="card-body p-4">
       <h5 class="card-title mb-4 fw-bold fs-3">Contact Us</h5>
-      <form role="form" class="d-flex flex-column gap-4 needs-validation" novalidate>
+      <form class="d-flex flex-column gap-4 needs-validation" novalidate>
 
         <div class="row">
           <div class="col">
@@ -40,6 +40,7 @@
         <div>
           <label for="Email" class="form-label">Email address <span class="asterix">*</span></label>
           <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+          <small id="emailHelp">We'll never share your email with anyone else.</small>
           <div class="invalid-feedback">
             Please enter a valid email address
           </div>
@@ -47,7 +48,7 @@
 
         <div>
           <label for="queryType" class="form-label">Query Type <span class="asterix">*</span></label>
-          <fieldset class="row justify-content-between px-2" required>
+          <fieldset class="row justify-content-between px-2" >
             <input type="radio" id="general" name="enquiry" value="general" required>
             <label for="general" class="enquiry-label">
               <span class="custom-radio"></span>
