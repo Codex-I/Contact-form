@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: "Karla", sans-serif;
+}
+
+html {
+    background-color: hsl(148, 38%, 91%);
+}
+
+body {
+    max-height: 100%;
+    background-color: hsl(148, 38%, 91%);
+}
+
+.card {
+    width: 40% !important;
+}
+
+.card-title {
+    color: hsl(169, 82%, 27%) !important;
+}
+
+.asterix {
+    color: hsl(169, 82%, 27%) !important;
+}
+
+.btn-prim, .bg-prim {
+    background-color: hsl(169, 82%, 27%) !important;
+    color: hsl(0, 0%, 100%);
+}
+
+textarea {
+    resize: none;
+}
+
+.enquiry-label {
+    padding: 10px 20px 10px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 48% !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    position: relative;
+}
+
+.custom-radio {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    position: absolute;
+    top: 33%;
+    left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-radio::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: hsl(169, 82%, 27%);
+    border-radius: 50%;
+    display: none;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .enquiry-label {
+    border-color: hsl(169, 82%, 27%);
+    background-color: #e0ffe0;
+    color: #000;
+}
+
+input[type="radio"]:checked + .enquiry-label .custom-radio {
+    border-color: hsl(169, 82%, 27%);
+}
+
+input[type="radio"]:checked + .enquiry-label .custom-radio::after {
+    display: block;
+}
+
+input:focus,
+textarea:focus {
+    border-color: hsl(169, 82%, 27%) !important;
+    box-shadow: none !important;
+}
+
+/* Toast message styling */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    min-width: 300px;
+    z-index: 1050;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .card {
+        width: 100% !important;
+    }
+
+    .enquiry-label {
+        width: 100% !important;
+        margin-bottom: 10px;
+    }
+
+
+    .toast-container {
+        left: 90%!important;
+        transform: translate(-50%, -50%)!important;
+       
+    }
+      
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .btn-prim {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+}
