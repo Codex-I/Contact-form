@@ -49,7 +49,7 @@ We welcome contributions to improve the functionality and user experience of our
 
 ## Contact
 
-If you have any questions, suggestions, or feedback regarding the project, feel free to reach out to us at [contact@cartoondevelopers.com](mailto:contact@cartoondevelopers.com).
+If you have any questions, suggestions, or feedback regarding the project, feel free to reach out to us at [youngcodeafrique@outlook.com](mailto:youngcodeafrique@outlook.com).
 
 Happy coding!
 
